@@ -65,12 +65,10 @@ while 1:   # Make this a thread or something.
         ssid = line.split()[0]
         if re.match(magnet_re, ssid):
             print ssid
-            cleaned = ssid.split('-')[1]
-            print cleaned
-            infohash = b64to16(cleaned)
-            print "infohash decoded: %s" % infohash
+            payload = ssid.split('-')[1]
+            infohash = b64to16(payload)
             magnetLink = "magnet:?xt=urn:btih:%s" % infohash
-            print magnetLink
+            print "magnetLink: %s" % magnetlink
             session.add(magnetLink)
     time.sleep(5)
 
