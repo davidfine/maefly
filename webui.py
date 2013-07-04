@@ -59,7 +59,7 @@ class utWebAPI:
 session = utWebAPI(port, username, password)
 
 
-while 1:
+while 1:   # Make this a thread or something.
     scan = os.popen('/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -s').readlines()
     for line in scan:
         ssid = line.split()[0]
