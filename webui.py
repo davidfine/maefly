@@ -74,12 +74,11 @@ while 1:
             session.add(magnetLink)
     time.sleep(5)
 
-#print session.list()
-#print session.add('magnet:?xt=urn:btih:335990d615594b9be409ccfeb95864e24ec702c7')
 
 '''
-#session = utWebAPI(port, username, password)
-#print session.list()
-#magnetLink = 'magnet:?xt=urn:btih:335990d615594b9be409ccfeb95864e24ec702c7'
-#print session.add(magnetLink)
+uTorrent API Usage:
+session = utWebAPI(port, username, password)
+print session.list()
+magnetLink = 'magnet:?xt=urn:btih:335990d615594b9be409ccfeb95864e24ec702c7'
+print session.add(magnetLink)
 '''
